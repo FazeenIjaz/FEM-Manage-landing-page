@@ -8,14 +8,14 @@ const Testimonials = () => {
       <h2 className="text-center text-[30px] font-semibold text-Dark-Blue">
         What they’ve said
       </h2>
-      <div className="overflow-x-scroll flex gap-20 ">
+      <div className="overflow-x-scroll flex gap-20 pt-[90px]">
         {testimonials.map((testimonial) => (
           <div
-            className="md:min-w-[390px] relative min-w-[290px] text-center flex flex-col gap-4 bg-Very-Light-Gray p-[20px] h-auto  rounded-md"
+            className="md:min-w-[390px] relative min-w-[290px] text-center flex flex-col gap-4 bg-Very-Light-Gray p-[20px] h-auto rounded-md"
             key={testimonial.id}
           >
-            <div className="max-w-[50px]  max-h-[50px] mx-auto ">
-              <img src={testimonial.avatar} alt="" className="lg:-mt-[50px] -mt-[40px]" />
+            <div className="max-w-[50px] max-h-[50px] absolute -top-[30px] right-[45%] z-50">
+              <img src={testimonial.avatar} alt="" className="" />
             </div>
             <h6 className="text-[20px]">{testimonial.name}</h6>
             <p className="text-Dark-Grayish-Blue max-w-full">
